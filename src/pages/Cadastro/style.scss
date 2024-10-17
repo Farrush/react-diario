@@ -1,0 +1,42 @@
+.page_cad{
+    .form{
+        width: 60vw;
+        border-radius: 20px;
+        padding: 36px;
+        margin: 100px auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        box-shadow: 0px 1px 10px #0003;
+        h1{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            input{
+                flex-grow: 3;
+                padding: 4px;
+                font-size: 18px;
+            }
+            label{
+                flex-grow: 1;
+                text-align: right;
+                font-size: 18px;
+            }
+            button{
+                padding: 4px 6px;
+                border-radius: 4px;
+                background-color: #fff;
+                border: 1px black solid;
+                font-size: 20px;
+                cursor: pointer;
+                &:active{
+                    border-style: outset;
+                }
+            }   
+        }
+    }
+}
