@@ -1,4 +1,16 @@
+
 .App{
-    height: 100%;
     width: 100%;
+    background-color: var(--background);
+    color: var(--font-color);
+    #theme{
+        position: absolute;
+        display: flex;
+        margin: 8px 0 0 8px;
+        gap: 8px;
+        #theme-button{
+            width: 20px;
+            height: 20px;
+        }
+    }
 }

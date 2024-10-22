@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'nunito';
+  src: url('/public/assets/fonts/nunito/Nunito-Regular.ttf');
+}
+.dark-theme{
+  --background: #1b1b1b;
+  --font-color: #FEFEFE;
+  --main-color: rgb(255, 19, 94);
+  --shadow: #fff4;
+}
+.light-theme{
+  --background: #f9f9f9;
+  --font-color: #070606;
+  --main-color: #00ffb8;
+  --shadow: #0004;
+}
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +23,9 @@
 a{
   text-decoration: none;
 }
-body, html{
+body, html, #root{
   height: 100%;
+}
+input, textarea{
+  outline: none;
 }

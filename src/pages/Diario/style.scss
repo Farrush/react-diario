@@ -1,19 +1,97 @@
 .page_diario{
-    padding: 10px 20px;
+    padding: 20px 20px;
+    height: 100vw;
     .top{
         display: flex;
         gap: 20px;
-        h1{
+        padding: 20px 0;
+        h1, input{
             flex-grow: 1;
+            font-family: 'nunito';
+            font-size: 30px;
         }
-        button{
+        
+        .editar{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: var(--main-color);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                scale: 1.05;
+            }
+            img{
+                width:100%;
+            }
+        }
+        .submit{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #42f21f;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                scale: 1.05;
+            }
+            img{
+                width:100%;
+            }
+        }
+        .sair{
             padding: 6px 12px;
             border-radius: 20px;
             font-size: 24px;
             cursor: pointer;
-            border: 1px black solid;
+            border: 1px var(--main-color) solid;
+            background-color: var(--background);
+            color: var(--font-color);
             &:active{
                 border-style: outset;
+            }
+            &:hover{
+                color: var(--main-color);
+                border-color: var(--main-color);
+                transition: .2s;
+            }
+        }
+    }
+    .paragrafos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 20px;
+
+        > textarea{
+            padding: 4px 8px;
+            font-family: 'nunito';
+            font-size: 16px;
+            width: 90%;
+            height: 180px;
+            margin: 20px 0;
+        }
+        > button{
+            background-color: var(--background);
+            border: 1px solid var(--font-color);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 16px 0;
+            cursor: pointer;
+            font-size: 72px;
+            font-family: 'nunito';
+            line-height:100%;
+            color: var(--font-color);
+            &:hover{
+                scale: 1.04;
+                border: 1px solid var(--main-color);
+                color: var(--main-color);
+                transition: .2s;
             }
         }
     }
