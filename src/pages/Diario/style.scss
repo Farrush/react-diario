@@ -1,6 +1,6 @@
 .page_diario{
     padding: 20px 20px;
-    height: 100vw;
+    height: 100%;
     .top{
         display: flex;
         gap: 20px;
@@ -9,6 +9,7 @@
             flex-grow: 1;
             font-family: 'nunito';
             font-size: 30px;
+            
         }
         
         .editar{

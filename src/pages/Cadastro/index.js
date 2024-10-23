@@ -31,7 +31,7 @@ const Cadastro = () => {
                 </div>
                 <div className="row">
                     <label>Senha:</label>
-                    <input value={senha} onChange={e => setSenha(e.target.value)} type="password"/>
+                    <input onKeyDown={e => e.key === "Enter"? cadastrar():null} value={senha} onChange={e => setSenha(e.target.value)} type="password"/>
                 </div>
                 <div className="row">
                     <button onClick={cadastrar}>Cadastrar</button>

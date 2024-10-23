@@ -28,7 +28,7 @@ const Login = () => {
                 </div>
                 <div className="row">
                     <label>Senha:</label>
-                    <input value={senha} onChange={e => setSenha(e.target.value)} type="password"/>
+                    <input onKeyDown={e => e.key === "Enter"? fazerLogin():null} value={senha} onChange={e => setSenha(e.target.value)} type="password"/>
                 </div>
                 <div className="row">
                     <button onClick={fazerLogin}>Fazer Login</button>
